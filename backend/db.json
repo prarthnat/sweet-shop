@@ -1,0 +1,8 @@
+{
+  "sweets": [
+    { "id": 1, "name": "Gulab Jamun", "description": "Soft syrupy balls", "price": 2.5, "quantity": 10, "image": "" },
+    { "id": 2, "name": "Rasmalai", "description": "Creamy paneer discs", "price": 3.0, "quantity": 4, "image": "" },
+    { "id": 3, "name": "Cheesecake", "description": "Classic cheesecake", "price": 4.5, "quantity": 0, "image": "" }
+  ],
+  "auth": []
+}

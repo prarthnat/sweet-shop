@@ -1,0 +1,58 @@
+/* src/style/Header.css */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #fff0f5; /* soft pink like LandingPage */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  font-family: 'Bokor', cursive;
+}
+
+.header-container .logo h1 {
+  color: #d04f7c;
+  background-color: #f2f0f1;
+  font-size: 28px;
+  margin: 0;
+  
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #d15d86;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  transform: scale(1.1);
+}
+
+.logout-btn {
+  background-color: #d15d86;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.logout-btn:hover {
+  transform: scale(1.05);
+  background-color: #c84f76;
+}
+.logo-img {
+  width: 150px;  /* set desired logo width */
+  height: 80px; /* set desired logo height */
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #fff0f5; /* match header background */
+}

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Shop Project Prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: #f7e8ec;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Bento Grid Layout */
+        .bento-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .card {
+            background-color: #ffe6f0;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            margin-bottom: 20px;
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            color: #d15d86;
+            font-weight: bold;
+        }
+
+        .card-subtitle {
+            font-size: 1.2rem;
+            color: #d15d86;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Specific card layouts */
+        .master-card .content-box {
+            background-color: #ffc0d9;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .mentors-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .mentor-profile {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .mentor-profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .workshop-agenda {
+            padding: 20px 0;
+        }
+
+        .agenda-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .agenda-list li {
+            background-color: #ffc0d9;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .deal-card .deal-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .deal-card .price {
+            font-size: 2rem;
+            color: #d15d86;
+            font-weight: bold;
+        }
+
+        .button {
+            background-color: #d15d86;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #ff92b2;
+        }
+
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .achievement-box {
+            background-color: #ffc0d9;
+            border-radius: 10px;
+            height: 80px;
+        }
+
+        .testimonials {
+            padding-top: 20px;
+        }
+
+        .testimonial-card {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .cake-crew {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            background-color: #ffc0d9;
+            border-radius: 50%;
+        }
+
+        .faq-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+        }
+
+        .faq-item {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+            .mentors-grid {
+                grid-template-columns: 1fr;
+            }
+            .achievements-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 style="color: #d15d86; text-align: center;">Mithai Magic</h1>
+        <div class="bento-grid">
+            <!-- Left Column -->
+            <div>
+                <div class="card master-card">
+                    <h2 class="card-title">Master the art of Bento Cakes in London</h2>
+                    <div class="content-box">
+                        <p>Placeholder for introductory text.</p>
+                    </div>
+                    <h3 class="card-subtitle">Meet your sweet mentors</h3>
+                    <div class="mentors-grid">
+                        <div class="mentor-profile">
+                            <img src="https://placehold.co/80x80/d15d86/white?text=Mentor1" alt="Mentor 1">
+                            <p>Mentor Name</p>
+                        </div>
+                        <div class="mentor-profile">
+                            <img src="https://placehold.co/80x80/d15d86/white?text=Mentor2" alt="Mentor 2">
+                            <p>Mentor Name</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card workshop-agenda" style="margin-top: 20px;">
+                    <h2 class="card-title">Culinary workshop agenda</h2>
+                    <ul class="agenda-list">
+                        <li>Placeholder for agenda item 1</li>
+                        <li>Placeholder for agenda item 2</li>
+                        <li>Placeholder for agenda item 3</li>
+                    </ul>
+                </div>
+
+                <div class="card deal-card" style="margin-top: 20px;">
+                    <h2 class="card-title">Delicious deal</h2>
+                    <div class="deal-content">
+                        <span class="price">50€</span>
+                        <a href="#" class="button">Book now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div>
+                <div class="card">
+                    <h2 class="card-title">What we have done together</h2>
+                    <div class="achievements-grid">
+                        <div class="achievement-box"></div>
+                        <div class="achievement-box"></div>
+                        <div class="achievement-box"></div>
+                        <div class="achievement-box"></div>
+                        <div class="achievement-box"></div>
+                        <div class="achievement-box"></div>
+                    </div>
+                </div>
+
+                <div class="card testimonials" style="margin-top: 20px;">
+                    <h2 class="card-title">Happy Bakers</h2>
+                    <div class="testimonial-card">
+                        <p>"Placeholder testimonial text."</p>
+                        <p style="text-align: right; font-weight: bold; color: #d15d86;">- User Name</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>"Another placeholder testimonial."</p>
+                        <p style="text-align: right; font-weight: bold; color: #d15d86;">- Another User</p>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: 20px;">
+                    <h2 class="card-title">Join the cake crew</h2>
+                    <div class="cake-crew">
+                        <a href="#" class="button">Join</a>
+                        <div class="social-icons">
+                            <div class="social-icon"></div>
+                            <div class="social-icon"></div>
+                            <div class="social-icon"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: 20px;">
+                    <h2 class="card-title">Frequently baked questions</h2>
+                    <ul class="faq-list">
+                        <li class="faq-item">Question 1?</li>
+                        <li class="faq-item">Question 2?</li>
+                        <li class="faq-item">Question 3?</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

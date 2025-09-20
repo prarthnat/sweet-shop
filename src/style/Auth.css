@@ -1,0 +1,59 @@
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Sue Ellen Francisco', cursive;
+  background-color: #fff0f5;
+}
+
+.auth-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.auth-form h2 {
+  color: #d15d86;
+  margin-bottom: 20px;
+  font-family: 'Bokor', cursive;
+}
+
+.auth-form input[type="email"],
+.auth-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.auth-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #d15d86;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.auth-form button:hover {
+  background-color: #c14775;
+}
+
+.auth-form .error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.auth-form .link {
+  color: #d15d86;
+  cursor: pointer;
+  text-decoration: underline;
+}

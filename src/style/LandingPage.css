@@ -1,0 +1,105 @@
+/* src/style/landing.css */
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #f7e8ec;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Bento Grid Layout */
+.bento-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card {
+    background-color: #ffe6f0;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* …all other CSS from your HTML… */
+
+.button {
+    background-color: #d15d86;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ff92b2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+    .mentors-grid {
+        grid-template-columns: 1fr;
+    }
+    .achievements-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+/* landing.css or main.css */
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+.bokor-regular {
+  font-family: 'Bokor', system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Sue+Ellen+Francisco&display=swap');
+.sue-ellen-francisco-regular {
+  font-family: "Sue Ellen Francisco", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* src/style/LandingPage.css */
+body {
+  font-family: 'Sue Ellen Francisco', cursive;
+}
+
+h1, h2, h3, .nav a {
+  font-family: 'Bokor', cursive;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav a:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+.mentor-profile img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid #d15d86;
+}
